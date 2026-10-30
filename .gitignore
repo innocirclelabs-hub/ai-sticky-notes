@@ -1,0 +1,20 @@
+# This public repository contains reviewed documentation and imagery only.
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.dpapi
+*.sqlite
+*.sqlite-*
+*.db
+*.log
+*.zip
+*.exe
+*.msi
+node_modules/
+plugin/
+apps/
+ops/
+backups/
+AGENTS.md
