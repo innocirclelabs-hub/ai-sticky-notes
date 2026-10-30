@@ -1,0 +1,43 @@
+name: Feature request
+description: Suggest an improvement to tasks, rules, UX, syncing, or installation
+title: "[Feature] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: Describe the user task, not just a feature name
+    validations:
+      required: true
+  - type: textarea
+    id: desired
+    attributes:
+      label: Your preferred behavior
+      description: Describe a simple example of how it should work
+    validations:
+      required: true
+  - type: dropdown
+    id: component
+    attributes:
+      label: Area
+      options:
+        - Task planning and one-click approval
+        - Must-follow rules / guardrails
+        - Task groups, folding, archive and export
+        - Progress and evidence
+        - Session privacy and sharing
+        - Chrome window and controls
+        - ChatGPT/MCP connection
+        - Installation and updates
+        - Language and accessibility
+        - Codex (future support)
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context (optional)
+      description: Do not include private ChatGPT messages or sensitive data
+    validations:
+      required: false

@@ -1,0 +1,44 @@
+name: Installation help
+description: Get help with a GitHub Release installation or ChatGPT/MCP connection
+title: "[Setup] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        First read INSTALL.md and INSTALL_WITH_AI.md. Never post authentication secrets, API keys, local tunnel IDs, private ChatGPT transcripts or profile paths containing sensitive details.
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Where are you blocked?
+      options:
+        - No release asset appears
+        - Download / checksum verification
+        - Extracting the ZIP
+        - Chrome Developer mode / Load unpacked
+        - Extension opens but notes are not visible
+        - Local preview works, MCP connection missing
+        - ChatGPT plugin setup or permissions
+        - Updating an existing unpacked extension
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Operating system and Chrome version
+    validations:
+      required: true
+  - type: textarea
+    id: attempt
+    attributes:
+      label: Steps you tried
+      description: Include only non-sensitive commands and redacted messages
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: Error or unexpected result
+      description: Redact all credentials, IDs, personal chat content and private URLs
+    validations:
+      required: true
