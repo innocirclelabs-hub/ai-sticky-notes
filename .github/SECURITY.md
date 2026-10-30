@@ -6,4 +6,6 @@ Please **do not** disclose security vulnerabilities, private MCP endpoints, sess
 
 For ordinary non-security bugs, use [SUPPORT.md](../SUPPORT.md) and the public issue templates after redacting private data.
 
-**Scope:** This repository currently publishes documentation and images; the future software release is still pending. The MCP server and credential implementation are proprietary and should not be submitted as public attachments. Do not test against other users' accounts or bypass authentication controls without written authorization.
+**Scope:** The repository contains documentation and images. The v0.4.27-beta.1 Windows prerelease includes a compiled local engine, Chrome extension, setup helper and third-party runtimes for invited evaluation. The original private backend source and any user credentials, databases or private connection files are not public attachments. See [PRIVACY.md](../PRIVACY.md) and the testing permission.
+
+The helper accepts only a credential reference; the official tunnel client resolves the tester's own credential. Never upload the referenced file, connection settings, note database or unredacted logs. Use a restricted runtime credential, never the publisher's credentials. Do not test against other users' accounts or bypass authentication controls without written authorization.
