@@ -1,26 +1,7 @@
-# Rights, Scope and License Notice
+# Rights and scope
 
-**Publication status:** Public documentation and imagery. **No software package or operative end-user license is included.** A future separately licensed Chrome extension ZIP will contain inspectable client-side JavaScript.
+AI Sticky Notes is proprietary, not an open-source release. The public repository contains documentation, screenshots and feedback forms. A separately uploaded Windows prerelease contains browser-executable client JavaScript, compiled first-party runtime code, and licensed third-party runtimes. It does not contain the original private backend source tree, developer credentials, existing database or internal tests.
 
-**Rights statement:** © 2026 AI Sticky Notes respective rights holders. All rights reserved, subject to applicable law and the hosting platform's terms.
+The current download is authorized only for the invited technical evaluation described in [EVALUATION_PERMISSION.md](EVALUATION_PERMISSION.md). That limited testing authorization must not be presented as the final general-use EULA or permission for production/commercial deployment. The intended future personal/noncommercial and separately licensed commercial direction is unchanged. Third-party rights are preserved in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
-## What this repository contains
-
-The public repository directory contains documentation, a product icon, issue templates, and captured UI screenshots. When a GitHub Early Access Release is actually published, it may additionally provide a **proprietary Chrome extension ZIP containing the client-side JavaScript that Chrome must execute**. This client code is inspectable by recipients. The **private MCP server, account authentication, synchronization backend, SQLite data, tunnel configuration, credentials, internal tests and original development repository remain excluded**. Publishing an installation package is not an open-source source-code license.
-
-## What publication does not authorize
-
-Making this showcase visible is **not** an open-source grant or an offer to relicense the software. No permission to reproduce, modify, sell, sublicense, repackage or commercially exploit protected first-party materials is intended, other than any permissions that apply under mandatory law or the hosting platform's own terms.
-
-## Intended software-use policy (separate future distribution)
-
-If the owner later distributes AI Sticky Notes to end users, the intended licensing model is:
-
-- Free use by **individual natural persons**, solely for their **own personal, unpaid, noncommercial** purposes, under a separately reviewed end-user license.
-- No professional, employment, company, institutional, paid-service, resale, redistribution, OEM or competing-hosted-service use without a separate written commercial license.
-- Third-party components, if any, remain under their own valid notices and license terms.
-- Future commercial terms and availability may differ; **this showcase is not itself an operative end-user software license**.
-
-The actual legal copyright holder, license text and jurisdiction must be confirmed before product distribution. Please contact the product's official owner for licensing questions.
-
-**This is proprietary freeware planning, not an OSI-approved open-source license.** The screenshots are isolated scripted MCP UI demonstrations and must not be presented as genuine logged-in ChatGPT autonomous AI runs.
+Source confidentiality is not a promise that distributed bytecode or client scripts cannot be inspected or reverse engineered. No absolute anti-copying claim is made. Screenshots are documented isolated examples.

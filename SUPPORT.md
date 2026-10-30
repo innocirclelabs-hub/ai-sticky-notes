@@ -9,7 +9,7 @@ AI Sticky Notes welcomes practical feedback from early-access users.
 - **Need help installing:** Open **GitHub Issues → Installation help**.
 - **Security concern:** Follow [Private security reporting](.github/SECURITY.md) — don't post exploitable details publicly.
 
-GitHub Issues are the bug, feature, and setup tracker. No installer is currently published; check the release-readiness page before opening a missing-download report. Discussions are not required.
+GitHub Issues are the bug, feature, and setup tracker. The Windows colleague-test ZIP is published in Releases. Use its own Setup and checklist, and report the first failing stage. Discussions are not required.
 
 ## Useful bug reports
 
@@ -29,4 +29,4 @@ Watch the repository's **Releases** tab. GitHub unpacked Chrome extensions do **
 
 **Current focus:** ChatGPT web desktop Chrome. **Planned later:** Codex. Other browsers and mobile platforms are not presently advertised as supported.
 
-**Known early-access limitations:** The standalone browser-local interface cannot make the ChatGPT model read or update notes automatically. Full synchronization needs an authorized MCP connection and appropriate ChatGPT permissions. Do not equate the isolated use-case screenshots with verified public live-chat installation.
+**Known testing-release limitations:** The standalone browser-local interface cannot make the ChatGPT model read or update notes automatically. Full synchronization needs an authorized MCP connection and appropriate ChatGPT permissions. Do not equate the isolated use-case screenshots with verified public live-chat installation.

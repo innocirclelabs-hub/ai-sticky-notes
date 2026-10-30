@@ -1,54 +1,46 @@
 # AI Sticky Notes
 
-<img src="assets/ai-sticky-notes-icon.png" width="112" alt="AI Sticky Notes: a smiling yellow sticky note">
+<img src="assets/ai-sticky-notes-icon.png" width="100" alt="AI Sticky Notes icon">
 
-**Keep the plan visible. Keep the rules in view.**
+**The colleague-test package is downloadable. Download → install → connect your own AI account → report your results.**
 
-A movable sticky note for your existing ChatGPT conversations: tasks, verified progress, and persistent must-follow rules—without losing them in a long conversation.
+## [Download Windows x64 testing ZIP — v0.4.27-beta.1](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/download/v0.4.27-beta.1/AI-Sticky-Notes-Windows-v0.4.27-beta.1.zip)
 
-**Development build: `0.4.26-dev` · ChatGPT Web / desktop Chrome · Proprietary**
+[Release / checksum](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/tag/v0.4.27-beta.1) · [Install and connect](INSTALL.md) · [Install with an AI assistant](INSTALL_WITH_AI.md) · [Testing checklist](TEST_CHECKLIST.md)
 
-> **Availability — October 31, 2026:** This public repository contains documentation, product screenshots, and feedback templates. **No public installer ZIP or self-service MCP connection is available yet.** The planned GitHub Early Access release is intended to let people actually try the product before a Chrome Web Store release. Software distribution will follow only after the license, external-user onboarding, and clean-environment checks are complete. GitHub's automatically generated “Source code” archive contains these public materials, not the application.
+Extract **AI-Sticky-Notes-Windows-v0.4.27-beta.1.zip**, then run **AI-Sticky-Notes-Setup.exe**. This package includes the Chrome extension, compiled local note engine, Node runtime, official OpenAI tunnel runtime, local diagnostic, and setup guides. **Do not download the automatic Source code ZIP as the installer.**
 
-[Installation guide](INSTALL.md) · [Install with an AI assistant](INSTALL_WITH_AI.md) · [Version and support](VERSION.md) · [Release readiness](RELEASE_READINESS.md) · [Feedback](SUPPORT.md) · [Rights and scope](RIGHTS_AND_SCOPE.md)
+Your own supported ChatGPT/OpenAI account, tunnel authorization, runtime credential and Chrome extension approval remain necessary. No publisher keys, tunnel profile or existing notes are supplied. The setup helper accepts a credential reference, not the key itself; the official tunnel client handles it. This is a **prerelease for invited installation and functionality testing**, not a production-readiness claim. [Testing permission](EVALUATION_PERMISSION.md).
 
-## A plan you can keep track of
+## Keep tasks and rules visible
 
-**Tasks and rules stay separate.** Completed tasks keep their red strikethroughs and recorded completion evidence. Must-follow rules are not completed or silently removed when a job finishes.
+AI Sticky Notes attaches a movable note to existing ChatGPT conversations. Tasks and persistent must-follow rules stay separate. Review an entire proposed work plan once; actual AI tools can read the approved notes and record evidence-backed completion. Completed tasks retain red strikethroughs.
 
-**Approve the whole plan once.** Review a proposed task plan and its constraints together. Evidence-backed completion requires a connected, authorized AI/MCP workflow; the extension alone does not give an AI model access to your notes.
+Each approved job has its own title, large completion check, progress and independent fold control. A completed **7/7 · 100%** group stays distinct from the next **0/3 · 0%** job. Archive completed groups, save Markdown, or use one-confirm recoverable Trash without removing guardrails.
 
-**One conversation, distinct jobs.** Every approved plan has its own task group. A completed **7/7 · 100%** job can stay folded while a new **0/3 · 0%** job is open. Each group has a large completion mark, a title, and independent expand/collapse controls. Finishing an old job does not inflate the next job's progress.
+Drag, resize, fold and reopen; use Korean/English interface labels without translating note text. Optional native Picture-in-Picture is browser-controlled. Notes are private by default; explicit same-project sharing can be revoked. Revocation cannot erase text already sent in an earlier conversation message.
 
-**Keep the history, clear the workspace.** Archive completed groups, export their task history and evidence to Markdown, or move a completed group to recoverable Trash with one confirmation. Guardrails remain active. Completion never automatically deletes a group.
+Routine note access uses actual MCP tool reads rather than unsolicited note-summary attachments to the message composer. Visible notes alone do not guarantee AI compliance or prove it has read them.
 
-**A small, flexible interface.** Drag and resize the note, fold the entire panel or individual rule cards, switch English/Korean without translating note text, and request native Picture-in-Picture pinning where the browser supports it.
+## What is verified, and what you test
 
-**Your conversation is the boundary.** Notes are private to their source conversation by default. Sharing is explicit, limited to a verified project, and revocable. Revocation stops later access; it cannot erase text that was already sent in an earlier conversation message.
+The packaged Windows runtime passed its isolated local diagnostic, including authentication rejection, fresh SQLite startup, note read-back, separate-session privacy, plan approval/completion and restart restoration. The setup window was actually opened. Product-source regression evidence and earlier real maintainer-side Chrome/share tests are separate from this package test.
 
-**No forced composer attachments.** Current AI note access uses explicit MCP tool reads rather than repeatedly attaching note summaries to the ChatGPT message composer. AI compliance is not guaranteed merely because a note is visible.
+**Your own external account/PC acceptance is the purpose of this release and remains for you to run.** A READY tunnel, successful local diagnostic or rendered note is not automatically a live AI integration PASS. Use [the checklist](TEST_CHECKLIST.md) and [troubleshooting](TROUBLESHOOTING.md).
 
-## Product examples
+## Examples
 
-| University assignment | Small responsive website |
+| Assignment | Responsive webpage |
 |---|---|
-| ![Completed assignment plan in an isolated product UI demonstration](screenshots/student-04-complete.png) | ![Completed website plan in an isolated product UI demonstration](screenshots/web-04-complete.png) |
-| [Assignment walkthrough](USE_CASE_01_STUDENT_ASSIGNMENT.md) | [Website walkthrough](USE_CASE_02_SIMPLE_WEB_PAGE.md) |
+| ![Isolated assignment demo](screenshots/student-04-complete.png) | ![Isolated webpage demo](screenshots/web-04-complete.png) |
+| [Assignment walkthrough](USE_CASE_01_STUDENT_ASSIGNMENT.md) | [Webpage walkthrough](USE_CASE_02_SIMPLE_WEB_PAGE.md) |
 
-The eleven screenshots are real browser captures from **scripted, isolated demonstrations with sample data**, not recordings of autonomous AI in a logged-in ChatGPT conversation. They illustrate the core workflow and may not show every control added in the latest build. [Screenshot provenance](SCREENSHOTS.md).
+These sample images are scripted isolated product-UI demonstrations, not proof of autonomous execution in a logged-in account. [Provenance](SCREENSHOTS.md).
 
-## Installation and release status
+## Scope and rights
 
-The planned download will be a separately attached extension ZIP in this repository's [Releases](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases), with a checksum and the approved distribution terms. Until that asset exists, this repository is **not an installable release**.
+**Current test platform:** Windows 10/11 x64, desktop Chrome and supported ChatGPT custom MCP/tunnel accounts. Codex, mobile, other operating systems and Chrome Web Store distribution are not included.
 
-Browser-local mode and full AI-linked mode are different. Full AI read-back, evidence-based updates, and synchronized sharing require a separately authorized per-user MCP connection and host support. Never reuse the maintainer's private tunnel, database, keys, or session credentials.
+First-party source remains private. The download contains compiled engine bytecode and required inspectable browser-side JavaScript, not the original backend source tree. Compiled code is not promised to be reverse-engineering-proof. Third-party components retain their own [licenses](THIRD_PARTY_NOTICES.md). [Privacy](PRIVACY.md) · [Rights](RIGHTS_AND_SCOPE.md).
 
-**Current development scope:** ChatGPT Web on desktop Chrome, Windows-first. **Codex, mobile, and other browsers are not advertised as available.**
-
-## Feedback and rights
-
-Use [Issues](https://github.com/innocirclelabs-hub/ai-sticky-notes/issues/new/choose) for non-sensitive bug reports, installation questions, or feature requests. Please redact private conversation text and credentials. Security reports follow the [security policy](.github/SECURITY.md).
-
-AI Sticky Notes is proprietary, **not an open-source release**. The intended software-use policy is free personal, unpaid, noncommercial use by individuals; business, institutional, professional, resale, and OEM use require a separate written commercial license. Those are planned distribution terms, **not a software license granted by this documentation**. See [Rights and scope](RIGHTS_AND_SCOPE.md).
-
-The private product source, backend, authentication system, user data, and development history are not part of this repository.
+Use [Issues](https://github.com/innocirclelabs-hub/ai-sticky-notes/issues/new/choose) for redacted test results, bugs and feature requests. Security issues belong in [private vulnerability reporting](https://github.com/innocirclelabs-hub/ai-sticky-notes/security/advisories/new). Never upload key files, databases, tunnel identifiers or private conversations.
