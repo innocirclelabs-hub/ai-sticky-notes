@@ -4,11 +4,11 @@
 
 **The colleague-test package is downloadable. Download → install → connect your own AI account → report your results.**
 
-## [Download Windows x64 testing ZIP — v0.4.27-beta.1](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/download/v0.4.27-beta.1/AI-Sticky-Notes-Windows-v0.4.27-beta.1.zip)
+## [Download Windows x64 testing ZIP — v0.4.28-beta.1](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/download/v0.4.28-beta.1/AI-Sticky-Notes-Windows-v0.4.28-beta.1.zip)
 
-[Release / checksum](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/tag/v0.4.27-beta.1) · [Install and connect](INSTALL.md) · [Install with an AI assistant](INSTALL_WITH_AI.md) · [Testing checklist](TEST_CHECKLIST.md)
+[Release / checksum](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/tag/v0.4.28-beta.1) · [Install and connect](INSTALL.md) · [Install with an AI assistant](INSTALL_WITH_AI.md) · [Testing checklist](TEST_CHECKLIST.md) · [Continue in a new conversation](CONTINUATION.md)
 
-Extract **AI-Sticky-Notes-Windows-v0.4.27-beta.1.zip**, then run **AI-Sticky-Notes-Setup.exe**. This package includes the Chrome extension, compiled local note engine, Node runtime, official OpenAI tunnel runtime, local diagnostic, and setup guides. **Do not download the automatic Source code ZIP as the installer.**
+Extract **AI-Sticky-Notes-Windows-v0.4.28-beta.1.zip**, then run **AI-Sticky-Notes-Setup.exe**. This package includes the Chrome extension, compiled local note engine, Node runtime, official OpenAI tunnel runtime, local diagnostic, and setup guides. **Do not download the automatic Source code ZIP as the installer.**
 
 Your own supported ChatGPT/OpenAI account, tunnel authorization, runtime credential and Chrome extension approval remain necessary. No publisher keys, tunnel profile or existing notes are supplied. The setup helper accepts a credential reference, not the key itself; the official tunnel client handles it. This is a **prerelease for invited installation and functionality testing**, not a production-readiness claim. [Testing permission](EVALUATION_PERMISSION.md).
 
@@ -27,6 +27,10 @@ Routine note access uses actual MCP tool reads rather than unsolicited note-summ
 The packaged Windows runtime passed its isolated local diagnostic, including authentication rejection, fresh SQLite startup, note read-back, separate-session privacy, plan approval/completion and restart restoration. The setup window was actually opened. Product-source regression evidence and earlier real maintainer-side Chrome/share tests are separate from this package test.
 
 **Your own external account/PC acceptance is the purpose of this release and remains for you to run.** A READY tunnel, successful local diagnostic or rendered note is not automatically a live AI integration PASS. Use [the checklist](TEST_CHECKLIST.md) and [troubleshooting](TROUBLESHOOTING.md).
+
+## Continue without resetting progress
+
+When a conversation reaches its limit, select **Continue previous work** in a paired conversation in the same verified project. Review one group and confirm once. Its IDs, progress, completion evidence and applicable rules are preserved; unrelated work remains separate. The old conversation becomes read-only for that group. No unsolicited composer attachment is used. [Steps and limits](CONTINUATION.md).
 
 ## Examples
 

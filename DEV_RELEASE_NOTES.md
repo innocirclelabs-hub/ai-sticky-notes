@@ -1,11 +1,11 @@
-# v0.4.27-beta.1 — installable colleague test
+# v0.4.28-beta.1 — Continue one work group in a new conversation
 
-October 31, 2026. This prerelease replaces the previous docs-only handoff with a complete Windows testing package.
+This invited testing prerelease adds explicit same-account, same-verified-project work continuation. The old dialogue need not remain writable. Original task IDs, approval, evidence and progress are retained; only the selected group changes its editing conversation. Source history is read-only. Duplicate, competing and stale handoffs are rejected without cloning the work. New scoped resume data keeps separate jobs' rules from being merged.
 
-Included: setup/helper EXE, the Chrome extension, bundled Node runtime, private engine as compiled bytecode, official OpenAI tunnel runtime, per-file checksums, local diagnostic, first-run guides and third-party licenses. No developer credentials, real notes, tunnel profile, private source or internal tests are included.
+The normal note layout stays unchanged. The entry is a small link in an empty task list or an item in the existing settings/more menu. Review one compact card and confirm once. Nothing is automatically attached to the composer.
 
-The helper has no raw key input, no key decryption/storage and no automatic startup installation. It passes a user-selected env:/file: reference to the official tunnel client. Closing a running setup hides it in the tray; Stop/Exit ends this package only.
+The private source regression suite passed 65/65 in a sequential run. New store tests cover progress/evidence, project separation, stale/duplicate fencing, drafts/archive rules and disk reopen. These code tests are distinct from real ChatGPT account checks. Consult the release verification section for actual maintainer-side observations, and run TEST_CHECKLIST.md in your own account.
 
-Core note/batch/accordion features remain those validated in the development build. Package diagnostics use temporary sample data. External live-account acceptance is deliberately a tester task after download, not an already-passed claim or a prerequisite for distributing this test.
+The portable package retains the original setup method, bundled runtimes, per-user data directory, credential-reference-only behavior and existing evaluation terms. Private source, developer keys, tunnel profiles and databases are not distributed. Windows/ChatGPT Web test scope only.
 
-[Install](INSTALL.md) · [Test checklist](TEST_CHECKLIST.md) · [Release](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/tag/v0.4.27-beta.1)
+The final continuation UI test also exercises the official widget and floating Chrome overlay with one explicit handoff, retained fold state, and zero composer messages. A preview response is no longer allowed to replace the destination conversation snapshot. The packaged compiled engine independently passed nine continuation checks. Maintainer-side actual conversations demonstrated 5/7 transfer, a sixth evidence-backed completion, and refresh restoration; this is distinct from a new external tester account.

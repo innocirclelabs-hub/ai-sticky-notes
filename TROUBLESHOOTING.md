@@ -10,3 +10,7 @@
 - **Unsigned application warning:** this developer prerelease is not code-signed. Verify the official download and checksum and make your own trust decision. Follow organizational policies; do not turn off protection.
 
 Official guide: https://developers.openai.com/api/docs/guides/secure-mcp-tunnels
+
+## Continuation
+
+No candidates: confirm the exact same account, verified project and installation, and that the source group is active. A stale/expired preview must be reopened; do not force transfer by renaming jobs. An old conversation refusing an update after handoff is intentional. Group-specific rules are in `work_contexts`; select the intended job rather than combining every job's rules.

@@ -1,12 +1,12 @@
-# Install the colleague-test package — v0.4.27-beta.1
+# Install the colleague-test package — v0.4.28-beta.1
 
 **Windows 10/11 x64, desktop Chrome. This is an installable testing prerelease, not a production release.**
 
-[Download the complete Windows ZIP](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/download/v0.4.27-beta.1/AI-Sticky-Notes-Windows-v0.4.27-beta.1.zip) · [Release and SHA-256 checksum](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/tag/v0.4.27-beta.1)
+[Download the complete Windows ZIP](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/download/v0.4.28-beta.1/AI-Sticky-Notes-Windows-v0.4.28-beta.1.zip) · [Release and SHA-256 checksum](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/tag/v0.4.28-beta.1)
 
 ## 1. Extract and run
 
-Download **AI-Sticky-Notes-Windows-v0.4.27-beta.1.zip**, not GitHub's automatic Source code ZIP. Verify the SHA-256 against `SHA256SUMS.txt` on the same release. Extract the complete folder to a permanent directory under your own user profile. Keep all subfolders together.
+Download **AI-Sticky-Notes-Windows-v0.4.28-beta.1.zip**, not GitHub's automatic Source code ZIP. Verify the SHA-256 against `SHA256SUMS.txt` on the same release. Extract the complete folder to a permanent directory under your own user profile. Keep all subfolders together.
 
 Open **AI-Sticky-Notes-Setup.exe**. Node.js, the private compiled engine and the official tunnel runtime are included. No Python, npm, Git, administrator install, firewall opening or developer database is required. This prerelease helper is not code-signed; inspect the official source of the download and checksum before choosing whether to run it. Do not disable antivirus or organizational security policy.
 
@@ -14,7 +14,7 @@ Click **Local diagnostic**. It creates a temporary empty database on an unused l
 
 ## 2. Load the extension
 
-Use **Copy extension path** and **Chrome extensions** in Setup. In `chrome://extensions`, enable Developer mode, choose **Load unpacked**, and select the package's **extension** folder containing `manifest.json`. Confirm AI Sticky Notes **0.4.27-beta.1**. This browser approval is deliberately not bypassed.
+Use **Copy extension path** and **Chrome extensions** in Setup. In `chrome://extensions`, enable Developer mode, choose **Load unpacked**, and select the package's **extension** folder containing `manifest.json`. Confirm AI Sticky Notes **0.4.28-beta.1**. This browser approval is deliberately not bypassed.
 
 The extension can display local notes before AI connection, but that is not the completed test. Continue below.
 
@@ -58,3 +58,7 @@ Notes are created on your PC under `%APPDATA%\AI-Sticky-Notes-Beta\notes.sqlite`
 Stop the helper before replacing package files. Preserve the extension directory identity and data; do not uninstall/clear extension storage simply to update. Replacing files and reloading the existing extension is different from deleting notes. To remove the beta, stop/exit, remove the Chrome extension through Chrome, and remove the extracted folder. Keep your notes/data until you have exported anything needed. Revoke your own tunnel credential separately through OpenAI when no longer needed.
 
 Codex, macOS/Linux, mobile and Chrome Web Store distribution are outside this testing package.
+
+## Continue after a conversation limit
+
+See [CONTINUATION.md](CONTINUATION.md) for the compact, one-confirmation same-project handoff. Keep both old and new work groups distinct. Update both the runtime package and the included extension to this version; do not clear your note database or Chrome storage.

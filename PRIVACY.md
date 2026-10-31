@@ -9,3 +9,7 @@ The setup helper stores a tunnel ID and a credential reference. It never collect
 The local diagnostic uses an isolated temporary database and emits pass/fail checks without real conversation contents. Share only that sanitized diagnostic report and redacted errors when reporting a problem. Do not attach the runtime database, connection.json, a key file, private transcript or complete screenshots of other chats.
 
 Stopping the connection preserves your notes. Uninstalling or clearing extension storage can erase browser-local data. Export or preserve data before removal. No third-party advertising, analytics or remote-update agent is added by this beta setup helper.
+
+## Continuation records
+
+An explicit same-project continuation stores a local handoff snapshot and the selected work-group resume metadata in the existing note database. The original conversation can read its handoff-time snapshot, not later private destination edits. Only the selected group moves; unrelated conversation rules are not automatically copied. This history is not public GitHub content or a cross-device backup.

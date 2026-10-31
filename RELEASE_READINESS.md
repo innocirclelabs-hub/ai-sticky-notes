@@ -1,8 +1,8 @@
 # Testing-release status
 
-**v0.4.27-beta.1: installable colleague-testing prerelease.**
+**v0.4.28-beta.1: installable colleague-testing prerelease.**
 
-The complete Windows ZIP and SHA-256 checksum are in [Releases](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/tag/v0.4.27-beta.1). Download and extract the real asset, then run Setup. The original docs-only publication is superseded by this test package.
+The complete Windows ZIP and SHA-256 checksum are in [Releases](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/tag/v0.4.28-beta.1). Download and extract the real asset, then run Setup. The original docs-only publication is superseded by this test package.
 
 | Item | Status |
 |---|---|

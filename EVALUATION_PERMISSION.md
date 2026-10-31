@@ -1,4 +1,4 @@
-# Invited testing permission — v0.4.27-beta.1
+# Invited testing permission — v0.4.28-beta.1
 
 Published by the AI Sticky Notes maintainer through the GitHub account **innocirclelabs-hub** for the expressly requested colleague installation and functionality test.
 
