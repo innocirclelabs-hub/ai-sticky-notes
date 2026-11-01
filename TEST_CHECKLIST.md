@@ -5,7 +5,7 @@ Use your own Windows PC, Chrome and supported ChatGPT account. This checklist is
 | Test | Record actual result |
 |---|---|
 | Complete ZIP checksum and local diagnostic | PASS / FAIL + error |
-| Load included extension; version 0.4.28-beta.1 | PASS / FAIL |
+| Load included extension; version 0.4.29-beta.1 | PASS / FAIL |
 | Own tunnel and credential reference; local + tunnel READY | PASS / FAIL / account permission unavailable |
 | Own ChatGPT custom MCP connected; real list_notes and get_working_context | PASS / FAIL |
 | One review approval for a sample two-step plan | PASS / FAIL |
@@ -33,3 +33,15 @@ Do not mark an AI-connected test passed merely because local diagnostics or a sc
 - Confirm no automatic Context attachment appears.
 
 Do not report skipped account/UI checks as PASS.
+
+## First-use / onboarding evaluation (v0.4.29 beta)
+
+- [ ] Record elapsed time separately for download/extraction, Chrome extension, personal OpenAI tunnel/credential, ChatGPT custom MCP approval and first confirmed AI tool read.
+- [ ] Starting from plugin command Open AI Sticky Notes: only a SMALL pairing notice should appear, no duplicate full editable note card. Actual floating note must open and show AI connected.
+- [ ] From an empty Chrome task view: without onboarding knowledge, the in-note first-use hint shows one next action. Dismissing it persists for the same conversation. The extension icon can restore a hidden note.
+- [ ] Setup local READY vs tunnel READY vs current conversation AI connected are not conflated.
+- [ ] Setup's Open ChatGPT + copy first request copies the phrase but never sends it; user chooses the real chat and sends.
+- [ ] On missing extension, missing tunnel permission or denied custom-MCP approval, display the limiting step; do not claim setup is complete.
+- [ ] After connection, ask for an actual sample task, approve plan once, verify read tool call and evidence-marked completion, then refresh and confirm state.
+- [ ] Confirm no auto @Context attachment, no automatic account credential upload and no new server account.
+- [ ] Compare manual plugin entry and extension-icon entry, record which action was confusing and how long it took. Local tests are not a colleague-user acceptance result.
