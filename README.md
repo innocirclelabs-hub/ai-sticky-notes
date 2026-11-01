@@ -4,13 +4,17 @@
 
 **The colleague-test package is downloadable. Download → install → connect your own AI account → report your results.**
 
-## [Download Windows x64 testing ZIP — v0.4.28-beta.1](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/download/v0.4.28-beta.1/AI-Sticky-Notes-Windows-v0.4.28-beta.1.zip)
+## [Download Windows x64 testing ZIP — v0.4.29-beta.1](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/download/v0.4.29-beta.1/AI-Sticky-Notes-Windows-v0.4.29-beta.1.zip)
 
-[Release / checksum](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/tag/v0.4.28-beta.1) · [Install and connect](INSTALL.md) · [Install with an AI assistant](INSTALL_WITH_AI.md) · [Testing checklist](TEST_CHECKLIST.md) · [Continue in a new conversation](CONTINUATION.md)
+[Release / checksum](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/tag/v0.4.29-beta.1) · [Install and connect](INSTALL.md) · [Install with an AI assistant](INSTALL_WITH_AI.md) · [Testing checklist](TEST_CHECKLIST.md) · [Continue in a new conversation](CONTINUATION.md) · [First use](FIRST_RUN.md)
 
-Extract **AI-Sticky-Notes-Windows-v0.4.28-beta.1.zip**, then run **AI-Sticky-Notes-Setup.exe**. This package includes the Chrome extension, compiled local note engine, Node runtime, official OpenAI tunnel runtime, local diagnostic, and setup guides. **Do not download the automatic Source code ZIP as the installer.**
+Extract **AI-Sticky-Notes-Windows-v0.4.29-beta.1.zip**, then run **AI-Sticky-Notes-Setup.exe**. This package includes the Chrome extension, compiled local note engine, Node runtime, official OpenAI tunnel runtime, local diagnostic, and setup guides. **Do not download the automatic Source code ZIP as the installer.**
 
 Your own supported ChatGPT/OpenAI account, tunnel authorization, runtime credential and Chrome extension approval remain necessary. No publisher keys, tunnel profile or existing notes are supplied. The setup helper accepts a credential reference, not the key itself; the official tunnel client handles it. This is a **prerelease for invited installation and functionality testing**, not a production-readiness claim. [Testing permission](EVALUATION_PERMISSION.md).
+
+## One floating note, not two task cards
+
+The full task UI appears only as a movable yellow overlay above the ChatGPT Chrome page. Asking ChatGPT to open AI Sticky Notes uses a small temporary pairing notice to transfer the conversation's one-use proof; it is not a second editable note. The bundled extension is required for free movement. Setup has a single Open ChatGPT + copy first request action. [First-use steps](FIRST_RUN.md).
 
 ## Keep tasks and rules visible
 
