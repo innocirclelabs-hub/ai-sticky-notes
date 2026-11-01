@@ -14,3 +14,7 @@ Official guide: https://developers.openai.com/api/docs/guides/secure-mcp-tunnels
 ## Continuation
 
 No candidates: confirm the exact same account, verified project and installation, and that the source group is active. A stale/expired preview must be reopened; do not force transfer by renaming jobs. An old conversation refusing an update after handoff is intentional. Group-specific rules are in `work_contexts`; select the intended job rather than combining every job's rules.
+
+## Pairing notice but no floating note
+
+The small ChatGPT plugin notice is a connection handoff, not the editable sticky note. Ensure the bundled Chrome extension is enabled for chatgpt.com; open an existing ChatGPT conversation and click the yellow extension toolbar icon to show or restore it. Only the actual floating note's AI connected badge proves this conversation was paired. If missing, confirm your own tunnel and custom MCP permissions in FIRST_RUN.md. If an older ChatGPT cached app displays a full card, verify the correct release and app resource, then update/reconnect through supported app settings; do not force browser security policies.
