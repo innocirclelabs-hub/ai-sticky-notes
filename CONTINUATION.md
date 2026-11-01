@@ -1,6 +1,6 @@
 # Continue the same work in a new conversation
 
-**v0.4.28-beta.1 · Explicit same-project continuation · Windows / ChatGPT Web test build**
+**v0.4.29-beta.1 · Explicit same-project continuation · Windows / ChatGPT Web test build**
 
 A conversation reaching its limit should not reset your task list. Continue one selected work group in another existing ChatGPT conversation without copying it into a second independently editable job.
 
