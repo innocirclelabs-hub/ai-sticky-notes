@@ -1,4 +1,4 @@
-# First use: floating AI Sticky Notes (Windows beta v0.4.29-beta.3)
+# First use: floating AI Sticky Notes (Windows beta v0.4.29-beta.2)
 
 This is an invited colleague evaluation build, not the finished public service.
 You do not need a terminal, Python, npm, a publisher-operated server or a publisher API key. An authorized OpenAI tunnel and the tester's own account approval are still required.
@@ -33,5 +33,3 @@ If connection fails, the Setup next-action line and TROUBLESHOOTING.md point to 
 설정·연결 안내는 사용자가 해야 하는 다음 단계만 보여줍니다. 앱이 메시지를 대신 전송하지 않으며, 키 원문을 채팅이나 설치 프로그램에 붙여넣지 않습니다. 터널을 만들 권한이 없다면 이를 숨기지 않고 계정/관리자 권한 제한으로 보고합니다. 설치 진행 시간과 막힌 단계를 TEST_CHECKLIST.md에 기록하세요.
 
 If it still fails after reinstalling, click Copy safe connection report in Setup and share only that reviewed JSON. See CONNECTION_DIAGNOSTICS.md. Do not reset the Chrome extension, account, keys or notes as a first response.
-
-When the small plugin notice says it opened, but the floating note still says AI connection pending, expand Not connected automatically? in the notice and copy its one-use code into the floating note's own connection-code input. See PAIRING_RECOVERY.md. Never send the code in ChatGPT.
