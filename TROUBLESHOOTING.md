@@ -22,7 +22,3 @@ The small ChatGPT plugin notice is a connection handoff, not the editable sticky
 ## New safe connection diagnosis (beta.2)
 
 Use Copy safe connection report in Setup. It checks real TCP 8791, expected loopback health, personal tunnel ready endpoint and credential-reference presence without reading credential contents or exposing original stderr. See [CONNECTION_DIAGNOSTICS.md](CONNECTION_DIAGNOSTICS.md). Do not kill arbitrary processes or repeat full uninstall.
-
-## Plugin opened but floating note AI is disconnected
-
-The browser one-time proof may not reach Chrome's extension from the host iframe. In beta.3 use the small plugin notice's manual one-use code, pasted ONLY in the movable note's own pairing input. Expired/consumed proofs need a new open_postit request. No backend notes or files need to be deleted. See PAIRING_RECOVERY.md.
