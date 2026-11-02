@@ -18,3 +18,7 @@ No candidates: confirm the exact same account, verified project and installation
 ## Pairing notice but no floating note
 
 The small ChatGPT plugin notice is a connection handoff, not the editable sticky note. Ensure the bundled Chrome extension is enabled for chatgpt.com; open an existing ChatGPT conversation and click the yellow extension toolbar icon to show or restore it. Only the actual floating note's AI connected badge proves this conversation was paired. If missing, confirm your own tunnel and custom MCP permissions in FIRST_RUN.md. If an older ChatGPT cached app displays a full card, verify the correct release and app resource, then update/reconnect through supported app settings; do not force browser security policies.
+
+## New safe connection diagnosis (beta.2)
+
+Use Copy safe connection report in Setup. It checks real TCP 8791, expected loopback health, personal tunnel ready endpoint and credential-reference presence without reading credential contents or exposing original stderr. See [CONNECTION_DIAGNOSTICS.md](CONNECTION_DIAGNOSTICS.md). Do not kill arbitrary processes or repeat full uninstall.
