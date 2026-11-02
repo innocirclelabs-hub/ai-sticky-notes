@@ -30,3 +30,5 @@ Watch the repository's **Releases** tab. GitHub unpacked Chrome extensions do **
 **Current focus:** ChatGPT web desktop Chrome. **Planned later:** Codex. Other browsers and mobile platforms are not presently advertised as supported.
 
 **Known testing-release limitations:** The standalone browser-local interface cannot make the ChatGPT model read or update notes automatically. Full synchronization needs an authorized MCP connection and appropriate ChatGPT permissions. Do not equate the isolated use-case screenshots with verified public live-chat installation.
+
+For pairing problems, only request anonymized success/failure stage and the reviewed safe diagnostic JSON. NEVER ask for a one-use pairing code, ChatGPT session ID, personal key, tunnel ID, note text, screenshot with code or raw logs. Point users to PAIRING_RECOVERY.md.
