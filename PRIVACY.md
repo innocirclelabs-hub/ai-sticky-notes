@@ -13,3 +13,7 @@ Stopping the connection preserves your notes. Uninstalling or clearing extension
 ## Continuation records
 
 An explicit same-project continuation stores a local handoff snapshot and the selected work-group resume metadata in the existing note database. The original conversation can read its handoff-time snapshot, not later private destination edits. Only the selected group moves; unrelated conversation rules are not automatically copied. This history is not public GitHub content or a cross-device backup.
+
+## Local safe connection report
+
+The beta.2 Windows helper stores only fixed process error categories/counts and known connection status labels at %APPDATA%/AI-Sticky-Notes-Beta/diagnostics/connection-last.json. It never persists raw child output, key values, key-file contents, real tunnel IDs or private notes as part of the report. Sharing a reviewed report is a user-controlled action, not an automatic publisher upload.
