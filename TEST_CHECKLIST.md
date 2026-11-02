@@ -5,7 +5,7 @@ Use your own Windows PC, Chrome and supported ChatGPT account. This checklist is
 | Test | Record actual result |
 |---|---|
 | Complete ZIP checksum and local diagnostic | PASS / FAIL + error |
-| Load included extension; version 0.4.29-beta.3 | PASS / FAIL |
+| Load included extension; version 0.4.29-beta.2 | PASS / FAIL |
 | Own tunnel and credential reference; local + tunnel READY | PASS / FAIL / account permission unavailable |
 | Own ChatGPT custom MCP connected; real list_notes and get_working_context | PASS / FAIL |
 | One review approval for a sample two-step plan | PASS / FAIL |
@@ -54,13 +54,3 @@ Do not report skipped account/UI checks as PASS.
 - Confirm no automatic upload, no user DB changes, no port-owner termination.
 - Confirm ChatGPT account/plugin permissions are separately UNVERIFIED until a real model tool read.
 - Obtain actual colleague first-use diagnostic and record failure point/time before claiming a fix.
-
-## Beta.3 real-browser pairing verification
-
-- [ ] Plugin shows compact host pairing notice; Chrome note is the only full editor.
-- [ ] Host cross-frame delivery succeeds: bridge replies with no-secret status, yellow note says AI connected.
-- [ ] Host message delivery blocked: manual fallback becomes visible after timeout, reveals ticket only on explicit user click, and can pair the same Chrome chat.
-- [ ] Expired/used ticket fails; new open_postit request yields a new ticket; wrong chat/project/owner cannot be attached.
-- [ ] Neither host notice nor Chrome overlay auto-writes ChatGPT messages, @Context, or other app data.
-- [ ] User notes, completion evidence, session continuation and privacy remain unchanged.
-- [ ] External colleague account/browser test must be recorded separately from isolated fixtures.
