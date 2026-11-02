@@ -5,7 +5,7 @@ Use your own Windows PC, Chrome and supported ChatGPT account. This checklist is
 | Test | Record actual result |
 |---|---|
 | Complete ZIP checksum and local diagnostic | PASS / FAIL + error |
-| Load included extension; version 0.4.29-beta.1 | PASS / FAIL |
+| Load included extension; version 0.4.29-beta.2 | PASS / FAIL |
 | Own tunnel and credential reference; local + tunnel READY | PASS / FAIL / account permission unavailable |
 | Own ChatGPT custom MCP connected; real list_notes and get_working_context | PASS / FAIL |
 | One review approval for a sample two-step plan | PASS / FAIL |
@@ -45,3 +45,12 @@ Do not report skipped account/UI checks as PASS.
 - [ ] After connection, ask for an actual sample task, approve plan once, verify read tool call and evidence-marked completion, then refresh and confirm state.
 - [ ] Confirm no auto @Context attachment, no automatic account credential upload and no new server account.
 - [ ] Compare manual plugin entry and extension-icon entry, record which action was confusing and how long it took. Local tests are not a colleague-user acceptance result.
+
+## Beta.2 diagnostics acceptance
+
+- Verify safe report button and optional read-only diagnostic CLI.
+- Verify actual 8791 port check is independent from temporary isolated runtime diagnostic.
+- Inject synthetic raw process lines with fake keys, tunnel IDs, user paths: only fixed codes/counts may survive in report.
+- Confirm no automatic upload, no user DB changes, no port-owner termination.
+- Confirm ChatGPT account/plugin permissions are separately UNVERIFIED until a real model tool read.
+- Obtain actual colleague first-use diagnostic and record failure point/time before claiming a fix.
