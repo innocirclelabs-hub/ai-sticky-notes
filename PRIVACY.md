@@ -17,5 +17,3 @@ An explicit same-project continuation stores a local handoff snapshot and the se
 ## Local safe connection report
 
 The beta.2 Windows helper stores only fixed process error categories/counts and known connection status labels at %APPDATA%/AI-Sticky-Notes-Beta/diagnostics/connection-last.json. It never persists raw child output, key values, key-file contents, real tunnel IDs or private notes as part of the report. Sharing a reviewed report is a user-controlled action, not an automatic publisher upload.
-
-Beta.3 supports an explicitly user-revealed 90-second one-use browser pairing secret for manual recovery. Only the user copies it from the small plugin notice into the floating note connection control. It is not written to the safe diagnostics report, stored in cloud accounts, or automatically sent to a model message. Never share this code in a chat or screenshot.
