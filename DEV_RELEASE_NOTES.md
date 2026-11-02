@@ -1,7 +1,14 @@
-# v0.4.29-beta.3 — Browser pairing recovery patch
+# v0.4.29-beta.2 — Safe connection diagnostics
 
-Colleague screenshots confirmed that open_postit displayed the compact host notice and the Chrome overlay existed, but the note still said AI connection pending. The complete browser pairing was not proven.
+This invited Windows beta is a diagnostics-focused patch, not a production service or root-cause fix for the colleague's unobserved PC.
 
-The canonical MCP UI is now launcher-v2; cached launcher-v1 and notes-v1..18 aliases remain supported. The launcher acknowledges successful browser pairing only after a no-secret Chrome extension receipt; if no acknowledgement is seen, it offers an explicitly copied, short-lived one-use code for the EXISTING floating note's manual connection field. The secret is not automatically displayed, logged or sent to ChatGPT.
+- Report actual loopback 8791 occupancy and expected-product health separately from the isolated 11-check local diagnostic.
+- Observe child process output in memory only; export fixed error codes and counts, not source lines or credentials.
+- Save safe local diagnostics after startup failure, unexpected process exit or tunnel readiness change.
+- Add Copy safe connection report in Setup and optional read-only CLI.
+- Do not expose raw key, tunnel ID, credential-file path, note content, host session, or arbitrary process text.
+- Keep earlier local MCP, Chrome extension and same-project continuation. Does not create a publisher server.
+- A tunnel OAuth discovery warning alone is not proof of an unusable tunnel.
+- External colleague's own account and time-to-first-use acceptance remain unverified.
 
-The floating note remains the only full editable UI. No hosted server, new user account or credential storage is introduced. This is a recoverability fix and not proof that the exact colleague-specific message delivery failure is corrected. Confirm on their own browser.
+Read CONNECTION_DIAGNOSTICS.md and TEST_CHECKLIST.md.
