@@ -1,4 +1,4 @@
-# Safe connection diagnostics — v0.4.29-beta.3
+# Safe connection diagnostics — v0.4.29-beta.2
 
 Invited Windows x64 / Chrome / ChatGPT test release. No publisher-owned server, key or tunnel.
 
