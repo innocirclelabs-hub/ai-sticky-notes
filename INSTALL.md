@@ -1,14 +1,16 @@
-# Install the colleague-test package — v0.4.29-beta.1
+# Install the colleague-test package — v0.4.29-beta.2
 
 **Windows 10/11 x64, desktop Chrome. This is an installable testing prerelease, not a production release.**
 
-[Download the complete Windows ZIP](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/download/v0.4.29-beta.1/AI-Sticky-Notes-Windows-v0.4.29-beta.1.zip) · [Release and SHA-256 checksum](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/tag/v0.4.29-beta.1)
+[Download the complete Windows ZIP](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/download/v0.4.29-beta.2/AI-Sticky-Notes-Windows-v0.4.29-beta.2.zip) · [Release and SHA-256 checksum](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/tag/v0.4.29-beta.2)
 
 **New first-run guide:** [FIRST_RUN.md](FIRST_RUN.md). The setup window now shows one NEXT ACTION at a time and offers **Open ChatGPT + copy first request**. A small host pairing notice may appear briefly, but the only editable task view is the floating Chrome overlay. The user still approves Chrome installation, their own OpenAI tunnel and their own ChatGPT app.
 
+**Repeated installation failures:** use [Safe connection diagnostics](CONNECTION_DIAGNOSTICS.md), not another deletion. The built-in Local diagnostic tests a temporary port and cannot detect a real 8791 port collision. New safe reporting uses fixed event codes and never exports raw logs, keys or private notes.
+
 ## 1. Extract and run
 
-Download **AI-Sticky-Notes-Windows-v0.4.29-beta.1.zip**, not GitHub's automatic Source code ZIP. Verify the SHA-256 against `SHA256SUMS.txt` on the same release. Extract the complete folder to a permanent directory under your own user profile. Keep all subfolders together.
+Download **AI-Sticky-Notes-Windows-v0.4.29-beta.2.zip**, not GitHub's automatic Source code ZIP. Verify the SHA-256 against `SHA256SUMS.txt` on the same release. Extract the complete folder to a permanent directory under your own user profile. Keep all subfolders together.
 
 Open **AI-Sticky-Notes-Setup.exe**. Node.js, the private compiled engine and the official tunnel runtime are included. No Python, npm, Git, administrator install, firewall opening or developer database is required. This prerelease helper is not code-signed; inspect the official source of the download and checksum before choosing whether to run it. Do not disable antivirus or organizational security policy.
 
@@ -16,7 +18,7 @@ Click **Local diagnostic**. It creates a temporary empty database on an unused l
 
 ## 2. Load the extension
 
-Use **Copy extension path** and **Chrome extensions** in Setup. In `chrome://extensions`, enable Developer mode, choose **Load unpacked**, and select the package's **extension** folder containing `manifest.json`. Confirm AI Sticky Notes **0.4.29-beta.1**. This browser approval is deliberately not bypassed.
+Use **Copy extension path** and **Chrome extensions** in Setup. In `chrome://extensions`, enable Developer mode, choose **Load unpacked**, and select the package's **extension** folder containing `manifest.json`. Confirm AI Sticky Notes **0.4.29-beta.2**. This browser approval is deliberately not bypassed.
 
 The extension can display local notes before AI connection, but that is not the completed test. Continue below.
 
