@@ -1,8 +1,8 @@
 # Testing-release status
 
-**v0.4.29-beta.2: installable colleague-testing prerelease.**
+**v0.4.29-beta.3: installable colleague-testing prerelease.**
 
-The complete Windows ZIP and SHA-256 checksum are in [Releases](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/tag/v0.4.29-beta.2). Download and extract the real asset, then run Setup. The original docs-only publication is superseded by this test package.
+The complete Windows ZIP and SHA-256 checksum are in [Releases](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/tag/v0.4.29-beta.3). Download and extract the real asset, then run Setup. The original docs-only publication is superseded by this test package.
 
 | Item | Status |
 |---|---|
@@ -16,3 +16,5 @@ The complete Windows ZIP and SHA-256 checksum are in [Releases](https://github.c
 A colleague does not need to complete external acceptance before downloading. That acceptance is the reason this prerelease exists. A visible note or local PASS must not be mislabeled full ChatGPT acceptance.
 
 Beta.2 adds safe categorization of startup errors; the colleague's repeated failure remains unconfirmed until their safe diagnostic report is reviewed.
+
+Beta.3: isolated automatic pairing ACK and timed one-use user fallback pass. Actual external colleague first use and AI read acceptance remain unverified.
