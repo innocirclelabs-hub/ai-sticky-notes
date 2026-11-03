@@ -1,70 +1,34 @@
-# Install the colleague-test package — v0.4.29-beta.3
+# AI Sticky Notes — 간편 설치 및 ChatGPT 연결
 
-**Windows 10/11 x64, desktop Chrome. This is an installable testing prerelease, not a production release.**
+[Download the single Windows installer](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/download/v0.4.30-beta.1/AI-Sticky-Notes-Installer.exe)
 
-[Download the complete Windows ZIP](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/download/v0.4.29-beta.3/AI-Sticky-Notes-Windows-v0.4.29-beta.3.zip) · [Release and SHA-256 checksum](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/tag/v0.4.29-beta.3)
 
-**New first-run guide:** [FIRST_RUN.md](FIRST_RUN.md). The setup window now shows one NEXT ACTION at a time and offers **Open ChatGPT + copy first request**. A small host pairing notice may appear briefly, but the only editable task view is the floating Chrome overlay. The user still approves Chrome installation, their own OpenAI tunnel and their own ChatGPT app.
+검수용 0.4.30-beta.1. 개인 구독/발행사 서버/API 호출을 추가하지 않습니다.
 
-**Repeated installation failures:** use [Safe connection diagnostics](CONNECTION_DIAGNOSTICS.md), not another deletion. The built-in Local diagnostic tests a temporary port and cannot detect a real 8791 port collision. New safe reporting uses fixed event codes and never exports raw logs, keys or private notes.
+## 일반 사용자: 한 번 설치
 
-**If the yellow floating note is visible but says AI connection pending**, do not reinstall: this is the separate browser pairing step. The small ChatGPT pairing notice can copy a short-lived code into the floating note's own connection field. See [PAIRING_RECOVERY.md](PAIRING_RECOVERY.md). Tool open is not AI connected.
+1. 별도 배포되는 AI-Sticky-Notes-Installer.exe를 일반 사용자 권한으로 실행합니다.
+2. **설치**를 누릅니다. 설치 위치는 %LOCALAPPDATA%/Programs/AI-Sticky-Notes입니다. Node/Python 개발 도구나 관리자 권한은 필요하지 않습니다.
+3. 설치 후 **Chrome 확장 등록**을 눌러 Chrome 확장 관리로 이동합니다. 개발자 모드 → 압축해제된 확장 프로그램 로드 → 설치 폴더의 extension을 선택합니다. Chrome 사용자의 직접 승인이 필요합니다.
+4. **연결 설정 열기**를 누릅니다. 이전의 본인 터널 설정이 있으면 다시 입력하지 않습니다. 없으면 본인 OpenAI 계정에서 터널을 만들고 전용 런타임 키 파일 위치를 지정합니다. 키 본문은 프로그램이나 채팅 메시지에 붙이지 않습니다.
+5. **연결 시작**을 누릅니다. 로컬 MCP와 본인 터널 READY를 확인한 뒤 ChatGPT에서 커스텀 MCP 도구를 승인합니다.
+6. ChatGPT 기존 대화에서 '포스트잇 열어줘'를 요청합니다. 오른쪽 노란 포스트잇의 **AI 연결됨**을 확인합니다. 연결되지 않으면 작은 플러그인 연결 안내의 일회용 코드 복구 절차를 사용합니다. 코드는 채팅으로 보내지 않습니다.
 
-## 1. Extract and run
+**한계:** Chrome 확장 설치 승인, OpenAI 터널/계정 권한 승인 및 ChatGPT의 MCP 기능은 설치기가 대신 승인할 수 없습니다. Local MCP READY도 실제 AI의 메모 읽기 성공과 별개입니다.
 
-Download **AI-Sticky-Notes-Windows-v0.4.29-beta.3.zip**, not GitHub's automatic Source code ZIP. Verify the SHA-256 against `SHA256SUMS.txt` on the same release. Extract the complete folder to a permanent directory under your own user profile. Keep all subfolders together.
+## 기존 베타 설치자 업데이트
 
-Open **AI-Sticky-Notes-Setup.exe**. Node.js, the private compiled engine and the official tunnel runtime are included. No Python, npm, Git, administrator install, firewall opening or developer database is required. This prerelease helper is not code-signed; inspect the official source of the download and checksum before choosing whether to run it. Do not disable antivirus or organizational security policy.
+- Chrome에서 이미 로드한 확장의 폴더 경로를 유지해야 합니다. 기존 설치 폴더에 AI-Sticky-Notes-Setup.exe, extension, runtime 및 FILES.sha256이 있으면 설치기의 **기존 설치 폴더 선택**을 이용합니다.
+- AI Sticky Notes 연결을 **트레이에서 중지·종료**한 뒤 업데이트합니다. 다른 프로그램과 포트 소유자는 강제로 종료하지 않습니다.
+- 설치기는 임시 폴더에 먼저 압축을 풀고 파일 해시 검증 후 교체합니다. 기존 설치 폴더는 별도 .previous-* 폴더에 백업하며, 설치 실패 시 원래 폴더를 복원합니다.
+- 메모는 설치 폴더 밖 %APPDATA%/AI-Sticky-Notes-Beta/notes.sqlite에 보관되고, 설치·업데이트·재설치 시 삭제하거나 자동 초기화하지 않습니다.
+- Chrome 확장을 chrome://extensions에서 새로고침합니다. 불필요하게 제거/재등록하면 확장 ID 및 브라우저 저장 메모가 변경될 수 있습니다.
 
-Click **Local diagnostic**. It creates a temporary empty database on an unused loopback port and checks the actual bundled runtime. It does not use your account key, inspect existing notes, or certify your ChatGPT account. A successful result has eleven PASS checks.
+## 연결 실패 시
 
-## 2. Load the extension
+- 포스트잇이 보여도 AI 연결 대기면 작은 ChatGPT 플러그인 안내의 일회용 코드 복사 → 포스트잇의 연결 코드 직접 입력.
+- 8791 포트가 이미 실행 중인 AI Sticky Notes의 것이라면 중복 기동하지 않습니다. 기존 트레이 프로그램을 이용합니다.
+- 민감정보 제외 진단 보고서 복사는 고정 분류 상태만 포함합니다. 원본 키·터널 ID·사용자 메모·로그를 동료나 GitHub에 보내지 않습니다.
+- 기존 베타의 별도 수동 ZIP 설치 가이드는 LEGACY_BETA3_MANUAL_INSTALL.md에 보존했습니다.
 
-Use **Copy extension path** and **Chrome extensions** in Setup. In `chrome://extensions`, enable Developer mode, choose **Load unpacked**, and select the package's **extension** folder containing `manifest.json`. Confirm AI Sticky Notes **0.4.29-beta.3**. This browser approval is deliberately not bypassed.
-
-The extension can display local notes before AI connection, but that is not the completed test. Continue below.
-
-## 3. Authorize your own OpenAI tunnel
-
-Full AI integration uses your own supported ChatGPT/OpenAI account. The package neither includes the publisher's connection nor creates an account for you.
-
-Use OpenAI's secure API-key setup flow in your own account, following the [official tunnel permissions guide](https://github.com/openai/tunnel-client/blob/v0.0.18/docs/permissions.md) for a **runtime** credential with **Tunnels Read + Use**. Do not use an admin key for the running connection. Your account or workspace must permit creating/selecting a Secure MCP Tunnel and adding a custom MCP server.
-
-The Setup **Tunnel settings** button opens the official Platform page. Create a tunnel for your own relevant ChatGPT workspace and copy its complete tunnel ID into Setup. Account/workspace permissions and any provider terms or charges are controlled by OpenAI; this package does not purchase credits or enable billing.
-
-The second field takes a **credential reference, not the key itself**:
-
-- Use **Choose my key file** to select the dedicated key file obtained through the secure official setup/download flow. The helper stores only its path; the official OpenAI tunnel client reads the key. Keep that dedicated file private and outside the downloaded product folder, Git repositories and shared/cloud-synced directories.
-- An already provisioned environment-variable reference such as `env:CONTROL_PLANE_API_KEY` is also supported by the official client. The value must already be available to the launched process.
-
-Never paste a key into a ChatGPT message, issue, screenshot, the Tunnel ID field or the reference field. The helper does not read, decrypt, copy or upload the key file itself. This prerelease does not claim to provide an encrypted credential vault.
-
-Review the [invited testing permission](EVALUATION_PERMISSION.md), check the evaluation box and click **Save & start**. Wait for **Local MCP: READY** and **OpenAI tunnel: READY**. The engine binds only to `127.0.0.1:8791`; the tunnel is outbound. If the port is occupied, the helper refuses to replace the existing service.
-
-## 4. Add it in your own ChatGPT
-
-Click **ChatGPT connection**. Use the account's **Add custom MCP server** entry, select **Tunnel**, choose or enter your own tunnel ID, and name it **AI Sticky Notes**. Complete the host's explicit permissions. See [OpenAI's connection guide](https://developers.openai.com/plugins/deploy/connect-chatgpt).
-
-Keep Setup running. Closing its window hides an active connection in the Windows tray; **Stop connection** or **Exit** ends only this package's processes. There is no automatic Windows-startup installation.
-
-In an existing test conversation, enable the resulting app, then click Open ChatGPT + copy first request in Setup. Paste and send:
-
-> Open AI Sticky Notes in this conversation. Read `list_notes` and `get_working_context`. Then propose a two-step sample task with one must-follow rule. Do not use another conversation's notes.
-
-The small plugin pairing launcher issues a short-lived proof for that actual conversation, without displaying a second full note card. If the movable note is hidden, click the yellow Chrome extension icon. The floating note should report **AI connected**. Approve the plan once, ask the AI to perform the sample task, and check its real tool reads and evidence-based completion. **A visible note or tunnel READY alone is not proof of AI integration.**
-
-## 5. Test and report
-
-Follow [TEST_CHECKLIST.md](TEST_CHECKLIST.md). Record actual pass/fail results from your own account. Test on non-sensitive sample notes first. The purpose of this prerelease is to collect that external-user result; it is not a prerequisite that must already be passed before downloading.
-
-## Data, updating and removal
-
-Notes are created on your PC under `%APPDATA%\AI-Sticky-Notes-Beta\notes.sqlite`; no publisher notes are included. `connection.json` stores your tunnel ID and credential **reference**, not its contents. The Chrome extension keeps its own per-conversation view/local-note state. [Privacy details](PRIVACY.md).
-
-Stop the helper before replacing package files. Preserve the extension directory identity and data; do not uninstall/clear extension storage simply to update. Replacing files and reloading the existing extension is different from deleting notes. To remove the beta, stop/exit, remove the Chrome extension through Chrome, and remove the extracted folder. Keep your notes/data until you have exported anything needed. Revoke your own tunnel credential separately through OpenAI when no longer needed.
-
-Codex, macOS/Linux, mobile and Chrome Web Store distribution are outside this testing package.
-
-## Continue after a conversation limit
-
-See [CONTINUATION.md](CONTINUATION.md) for the compact, one-confirmation same-project handoff. Keep both old and new work groups distinct. Update both the runtime package and the included extension to this version; do not clear your note database or Chrome storage.
+**현재 단계:** 비개발자 설치 EXE, 업데이트 보존·롤백 및 기존 Chrome/MCP 코드의 자동화 가능한 구간을 검수하기 위한 빌드입니다. 모든 ChatGPT 요금제에서 MCP가 작동한다고 주장하지 않습니다.
