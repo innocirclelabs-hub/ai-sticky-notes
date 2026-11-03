@@ -1,15 +1,11 @@
 # Version and support
 
-**Testing release:** v0.4.29-beta.3 · October 31, 2026
+**Current invited testing release: v0.4.30-beta.1 — November 3, 2026.**
 
-Chrome numeric version: 0.4.27. Display version and packaged engine: 0.4.29-beta.3. Baseline product features: 0.4.26-dev.
+Download: https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/tag/v0.4.30-beta.1
 
-Windows x64 setup, Chrome extension, Node 24.21.0, compiled engine and official tunnel-client runtime 0.0.18 are included. No developer setup dependencies are required.
+Windows 10/11 x64. The one-file Windows installer embeds Node 24.21.0, local MCP SQLite runtime, OpenAI tunnel client and Chrome MV3 extension (Chrome version 0.4.30). No developer tools, administrative rights, publisher cloud service or AI API are required.
 
-The ZIP is available for invited colleague installation/AI connection tests. Account authorization is not bundled; your own OpenAI tunnel/key/ChatGPT permissions are required. Codex, mobile and non-Windows platforms are not included.
+**Limitations:** An unsigned beta may trigger a Windows reputation warning; do not bypass workplace security. Chrome extension installation, personal OpenAI tunnel/credential setup and ChatGPT MCP consent remain manual. A successful isolated self-test is NOT confirmation of another user's actual ChatGPT connection.
 
-[Release](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/tag/v0.4.29-beta.3) · [Install](INSTALL.md)
-
-Beta.2 patches the native Setup diagnostic helper. It retains the beta.1 compiled backend and Chrome overlay; Chrome numeric version remains 0.4.29 while version_name is 0.4.29-beta.3.
-
-Beta.3 updates the plugin pairing launcher and bundled Chrome bridge; extension numeric version remains 0.4.29 while descriptive version_name is 0.4.29-beta.3. Previous local Setup safe diagnostics are preserved.
+The previous v0.4.29-beta.3 ZIP prerelease remains available. This testing release is not an approved paid consumer distribution, online license server or general ChatGPT account guarantee.
