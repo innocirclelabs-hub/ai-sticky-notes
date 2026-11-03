@@ -64,3 +64,15 @@ Do not report skipped account/UI checks as PASS.
 - [ ] Neither host notice nor Chrome overlay auto-writes ChatGPT messages, @Context, or other app data.
 - [ ] User notes, completion evidence, session continuation and privacy remain unchanged.
 - [ ] External colleague account/browser test must be recorded separately from isolated fixtures.
+
+## v0.4.30-beta.1 — one-file Windows installer acceptance
+
+- [ ] Download the new AI-Sticky-Notes-Installer.exe and SHA256SUMS.txt, verify checksum. Do not download Source code ZIP.
+- [ ] Ordinary Windows user can open the installer without administrator elevation.
+- [ ] New install creates a stable user-local program directory; Chrome extension load requires the user's explicit Chrome approval.
+- [ ] Existing beta user selects the existing extension-containing folder, exits the old tray connection, upgrades and reloads that same Chrome extension (no uninstall/reset).
+- [ ] Previously saved tunnel ID and dedicated key *reference* are reused, without exposing actual credential values.
+- [ ] On a pre-existing local product port 8791, do not force-kill or start a second server.
+- [ ] ChatGPT custom MCP authorization is explicitly completed by the user's own account and the floating note displays AI connected.
+- [ ] A real conversation calls list_notes and get_working_context and correctly retains note data, red completion and project/session isolation. This remains an external tester acceptance gate, not covered by local installer fixture tests.
+- [ ] No publisher-hosted server/API or unrelated data/workspace modified. A Windows security reputation warning must not be bypassed by disabling protections.
