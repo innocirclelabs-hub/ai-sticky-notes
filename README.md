@@ -2,9 +2,15 @@
 
 <img src="assets/ai-sticky-notes-icon.png" width="100" alt="AI Sticky Notes icon">
 
+**Current test version: v0.4.30-beta.1 — single Windows installer EXE (no manual ZIP extraction).**
+
+[Download AI-Sticky-Notes-Installer.exe](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/download/v0.4.30-beta.1/AI-Sticky-Notes-Installer.exe) · [Installation instructions](EASY_INSTALL.md) · [Release and checksum](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/tag/v0.4.30-beta.1)
+
+**What still needs manual approval:** Chrome extension registration, the customer's own OpenAI tunnel, and their ChatGPT MCP permission. No publisher API, subscription, or hosted note server.
+
 **The colleague-test package is downloadable. Download → install → connect your own AI account → report your results.**
 
-## [Download Windows x64 testing ZIP — v0.4.29-beta.3](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/download/v0.4.29-beta.3/AI-Sticky-Notes-Windows-v0.4.29-beta.3.zip)
+### Previous manual ZIP — [v0.4.29-beta.3](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/download/v0.4.29-beta.3/AI-Sticky-Notes-Windows-v0.4.29-beta.3.zip)
 
 [Release / checksum](https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/tag/v0.4.29-beta.3) · [Install and connect](INSTALL.md) · [Install with an AI assistant](INSTALL_WITH_AI.md) · [Testing checklist](TEST_CHECKLIST.md) · [Continue in a new conversation](CONTINUATION.md) · [First use](FIRST_RUN.md)
 
