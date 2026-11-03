@@ -1,15 +1,11 @@
-# Install with an AI assistant — colleague beta
+# Installing AI Sticky Notes with an assistant — Windows prerelease v0.4.30-beta.1
 
-Give an assistant with authorized access to your Windows PC this repository URL: https://github.com/innocirclelabs-hub/ai-sticky-notes
+Use this public download: https://github.com/innocirclelabs-hub/ai-sticky-notes/releases/download/v0.4.30-beta.1/AI-Sticky-Notes-Installer.exe
 
-> Install the invited-test Windows package v0.4.29-beta.3 from this repository's Releases. Download **AI-Sticky-Notes-Windows-v0.4.29-beta.3.zip**, verify SHA256SUMS.txt, and extract to a stable user-owned folder. Do not use the automatic source-code ZIP. Read INSTALL.md and EVALUATION_PERMISSION.md first. Run AI-Sticky-Notes-Setup.exe and its isolated local diagnostic. Help me load the included extension folder in my own Chrome, preserving other extensions and profiles. For an OpenAI runtime credential, use the available secure OpenAI Platform key-setup flow for MY account; never ask me to paste a raw key into chat. Follow the official tunnel permission guide for Tunnels Read + Use and my own tunnel/workspace. Configure only a credential reference in Setup. Do not inspect or reuse the publisher's credentials. Start the package and verify local/tunnel readiness, then help with the explicit ChatGPT custom-MCP Tunnel authorization. Use actual list_notes/get_working_context in my real test chat; test completion, restore and isolation. Do not call local diagnostics a live-account PASS. Report the actual results using TEST_CHECKLIST.md. Do not bypass account or security restrictions.
+An assistant with authorized desktop access may download the exact EXE, verify the SHA256SUMS.txt checksum, run the installer under the current ordinary Windows user, and inspect the setup steps. **Do not request administrator privileges or replace unrelated processes.** Existing beta users must select the old installation folder to preserve their Chrome extension path, then reload that extension.
 
-Software and runtime are now downloadable for the test. Your own account consent, tunnel availability and Chrome installation approval still require your authorized interaction. Never expose keys or private notes in the issue tracker.
+After that, the user must personally approve **Load unpacked** in Chrome, set up/authorize their own Secure MCP Tunnel credential and enable the custom MCP in ChatGPT. No assistant or installer may bypass those account approval prompts or collect raw credential contents in a message. Existing tunnel ID and credential reference are reused from the user's AppData where available.
 
-For a requested conversation continuation, read CONTINUATION.md. Never choose another job solely by title or most recent activity. Use the actual destination connection and one explicit group confirmation, then read its work-scoped MCP context. Preserve old evidence and unresolved external operations; never replay them automatically.
+The user verifies the yellow floating note says **AI 연결됨** and ChatGPT actually calls list_notes/get_working_context. Otherwise collect only reviewed safe diagnostics. See EASY_INSTALL.md and PAIRING_RECOVERY.md.
 
-Read FIRST_RUN.md before the first real use. After own-account approval, let the USER click Open ChatGPT + copy first request, paste it into their selected existing conversation, and verify AI connected on the movable overlay. Do not request an extra full inline note card and do not auto-send messages.
-
-For repeated failures, follow CONNECTION_DIAGNOSTICS.md; inspect only the reviewed safe JSON, never original API keys, raw terminal logs, connection.json or notes.sqlite. A READY tunnel does not prove ChatGPT account permissions.
-
-A plugin-open success is not AI pairing success. If the floating note says AI connection pending, let the USER copy the one-use code between the on-screen host notice and movable note. Never ask the user to paste the code into a model message. See PAIRING_RECOVERY.md.
+This prerelease does not deliver a general-purpose zero-click ChatGPT connection. It includes no seller-paid AI API or operated backend.
